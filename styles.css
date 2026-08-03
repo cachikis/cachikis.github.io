@@ -1,0 +1,161 @@
+:root {
+  --accent: #800000;
+  --text: #202124;
+  --muted: #5f6368;
+  --border: #dadce0;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #5f0000;
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.navbar-title {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--accent);
+}
+
+.quarto-title-block {
+  display: none;
+}
+
+main.content {
+  max-width: 920px;
+  padding: 2rem 1.25rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.35rem;
+  margin: 0 0 1.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+  font-size: 1.35rem;
+  margin: 2rem 0 0.9rem;
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.3rem 0 0.35rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+section#research.level1 section.level3 {
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+}
+
+section#research.level1 section.level3 > h3:first-child {
+  margin-top: 0;
+}
+
+section#research.level1 section.level3 > :last-child {
+  margin-bottom: 0;
+}
+
+.home-intro {
+  align-items: start;
+  display: grid;
+  gap: 2.25rem;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  margin-bottom: 2rem;
+}
+
+.home-text {
+  min-width: 0;
+}
+
+.home-photo {
+  margin: 0;
+}
+
+.headshot {
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.nav-footer {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+  main.content {
+    padding-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .home-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .home-photo,
+  .headshot {
+    max-width: 240px;
+  }
+}
